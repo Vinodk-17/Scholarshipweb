@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholarship Website</title>
+    <link rel="stylesheet" href="./projectCss/index.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="contact.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+    </style>
+    <!-- for heading font -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+    <div id="signin_form">
+        <h2>Sign in</h2>
+        <hr />
+        <div class="signin">
+            <div class="inputBox">
+                <img src="./icons/person-fill.svg" />
+                <input type="email" name="email" placeholder="Email" />
+            </div>
+
+            <div class="inputBox">
+                <img src="./icons/lock_black_24dp.svg" />
+                <input type="password" name="password" placeholder="Password" />
+            </div>
+
+            <button id="btn2">Sign in</button>
+        </div>
+        <hr />
+        <!-- <button id="close">Close</button> -->
+    </div>
+
+    <div class="complete-body" id="main-content">
+        <!-- navbar-->
+        <header class="container1">
+            <div class="container-width">
+                <h1 class="dynamix" ">Scholarship...</h1>
+          <div class=" main">
+                    <button type="button" id="btn-login" style="background-color: rgb(64, 64, 204);">Log In</button>
+                    <button type="button" id="btn-signin" class="main-button" data-toggle="modal" data-target="#myModal"
+                        style="background-color: rgb(64, 64, 204);">
+                        Sign In
+                    </button>
+            </div>
+    </div>
+    </header>
+
+    <!-- Navigation Menu  -->
+    <nav class="nav"
+        style="font-size: 24px; font-weight: bold; background-color: rgb(255, 255, 255); float: right; margin-right: 10px;">
+        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+        <a class="nav-link" href="#Scholarship">Scholarship</a>
+        <a class="nav-link" href="About">About Us</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Slider  -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/ericson.jpeg" class="d-block w-100" alt="..." style="height: 25vw; width: 100vw;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/950x300/?Scholarship,school" class="d-block w-100" alt="..."
+                    style="height: 30vw; width: 100vw;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/950x300/?Scholarship,school" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--banner 1 -->
+    <section class="banner">
+        <div class="container2">
+            <!-- <div class="heading">
+                <h1 class="heading-1">"Online Is The New Way Of Learning"</h1>
+            </div> -->
+            <div class="text1">
+                <img src="./images/getStarted.jpg" alt="image" class="img1" />
+                <div class="text-2">
+                    <h2 class="heading-2">Get your career started with us...</h2>
+                    <p class="para-1">
+                        "Online is the new way to know more!"<br />Know about the scholarship around you from us and
+                        help your self to grow and be successfull.
+                    </p>
+
+                    <div class="buttons">
+                        <button type="button" class="account" style="background-color: rgb(64, 64, 204);">Create an
+                            Account</button>
+                        <button type="button" class="skip">Skip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner 2  -->
+    <section class="banner-2">
+        <div class="container-3">
+            <div class="text">
+                <h2 class="heading-3" style="font-weight: bold;">Start Exploring</h2>
+                <p class="para-2">
+                    Based on your profile you will receive matching scholarship email/sms/whatsapp/app notifications
+                    Keep your profile updated to receive relevant notifications, you can unsubscribe if you don’t want
+                    to receive notifications anymore...
+                </p>
+                <button type="button" class="exp" style="background-color: rgb(64, 64, 204); color: white;">Explore</button>
+            </div>
+            <img src="./images/explore.jpg" alt="img" class="img2" />
+        </div>
+    </section>
+
+    <!-- banner 3 -->
+    <!-- <section class="banner-3" id="banner">
+            <div class="container-4">
+               <img src="./images/virtual.jpg" alt="img" class="img3"> 
+                <div class="text-3">
+                    <h2 class="heading-4">Virtual Classroom</h2>
+                    <p class="para-3">
+                        Dynamix provides you virtual Classroom where you can prove yourself. We have periodic mock test,
+                        Quiz for each lesson and problem solving hour which will help you to grow your skills. 
+                    </p>
+                </div>
+            </div>
+
+        </section> -->
+
+    <!-- Card  -->
+    <div class="card-group"
+        style="margin-bottom: 100px; width: 70vw; justify-content: space-around; margin: auto; margin-bottom: 130px; height: 36vh;">
+        <div class="card" ">
+      <!-- <img src=" ./images/10-2.jpg" class="card-img-top" alt="..." style="height: 36.5vh;"> -->
+            <div class="card-body" style="background-color: rgb(64, 64, 204); font-weight: bold;">
+                <h4 class="card-title"
+                    style="font-weight: bold; text-align: center; background-color: rgb(255, 255, 255);">Scholarship for
+                    10th standard</h4>
+                <p class="card-text">
+                <details>
+
+                    <summary style="color: white; font-size: 20px;">
+                        HDFC Bank Parivartan's COVID Crisis Support Scholarship In-School Program 2021
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Up to INR 21,000</li>
+                        <li>Eligibility</li>
+                        <li>Class 1 to 12 students</li>
+                    </ul>
+
+                </details>
+                <details>
+                    <summary style="color: white; font-size: 20px;">
+                        Digital Bharati COVID Scholarship 2021-22
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Educational subscription vouchers and other benefits</li>
+                        <li>Eligibility</li>
+                        <li>Class 1 to 12 students who lost their parent(s) during COVID</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary style="color: white; font-size: 20px;">
+                        The Tata Capital Pankh Scholarship Programme for Class 6 to 10 Students 2021-22
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Up to 80% of tuition fees paid by student or up to INR 9,000 (whichever is less)</li>
+                        <li>Eligibility</li>
+                        <li>Students of Class 6 to 10</li>
+                    </ul>
+                </details>
+                </p>
+
+            </div>
+            <!-- <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div> -->
+        </div>
+        <div class="card">
+            <!-- <img src="./images/12-2.jpg" class="card-img-top" alt="..." style="height: 36.5vh;"> -->
+            <div class="card-body" style="background-color: rgb(64, 64, 204); font-weight: bold;">
+                <h4 class="card-title" style="font-weight: bold; text-align: center; background-color:white ">
+                    Scholarship for 12th standard</h4>
+                <p class="card-text">
+                <details>
+
+                    <summary style="color: white; font-size: 20px;">
+                        Merck India Charitable Trust (MICT) Scholarship Program 2021-22
+
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Up to INR 21,000</li>
+                        <li>Eligibility</li>
+                        <li>Class 1 to 12 students</li>
+                    </ul>
+
+                </details>
+                <details>
+                    <summary style="color: white; font-size: 20px;">
+                        Begum Hazrat Mahal National Scholarship Scheme for Minorities Girls 2021-22
+                
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Educational subscription vouchers and other benefits</li>
+                        <li>Eligibility</li>
+                        <li>Class 1 to 12 students who lost their parent(s) during COVID</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary style="color: white; font-size: 20px;">
+                        NSP Financial Assistance for Education of the Wards of Beedi/Cine/IOMC/LSDM Workers - Post-Matric 2021-22
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Up to 80% of tuition fees paid by student or up to INR 9,000 (whichever is less)</li>
+                        <li>Eligibility</li>
+                        <li>Students of Class 6 to 10</li>
+                    </ul>
+                </details>
+                </p>
+            </div>
+            <!-- <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div> -->
+        </div>
+        <div class="card">
+            <!-- <img src="./images/engineering.jpeg" class="card-img-top" alt="..."> -->
+            <div class="card-body" style="background-color: rgb(64, 64, 204); font-weight: bold;">
+                <h4 class="card-title"
+                    style="font-weight: bold; text-align: center; background-color: rgb(255, 255, 255);">Scholarship for
+                    UG/PG</h4>
+                <p class="card-text">
+                <details>
+
+                    <summary style="color: white; font-size: 20px;">
+                        HDFC Bank Parivartan's COVID Crisis Support Scholarship In-School Program 2021
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Up to INR 21,000</li>
+                        <li>Eligibility</li>
+                        <li>Class 1 to 12 students</li>
+                    </ul>
+
+                </details>
+                <details>
+                    <summary style="color: white; font-size: 20px;">
+                        Digital Bharati COVID Scholarship 2021-22
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Educational subscription vouchers and other benefits</li>
+                        <li>Eligibility</li>
+                        <li>Class 1 to 12 students who lost their parent(s) during COVID</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary style="color: white; font-size: 20px;">
+                        The Tata Capital Pankh Scholarship Programme for Class 6 to 10 Students 2021-22
+                    </summary>
+                    <ul style="color: white">
+                        <li>Award</li>
+                        <li>Up to 80% of tuition fees paid by student or up to INR 9,000 (whichever is less)</li>
+                        <li>Eligibility</li>
+                        <li>Students of Class 6 to 10</li>
+                    </ul>
+                </details>
+                </p>
+            </div>
+            <!-- <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div> -->
+        </div>
+    </div>
+
+    <!-- shubham -->
+    <div id="Container" class="outer">
+        <h1 id="Lesson">Scholarship News</h1>
+        <button class="btn" id="swipeLeft">&#10094;</button>
+        <div class="imageContainer" id="imgcon">
+            <div>
+                <img src="./images/n1.jpg" class="Slides" id="slide1" />
+                <p id="para1" style="font-size: 11px;">UGC Scholarship – Girls To Get INR 36,200 as Aid; Read
+                    Eligibility, Last Date & More</p>
+            </div>
+            <div>
+                <img src="./images/n2.jpg" class="Slides" id="slide2" />
+                <p id="para2" style="font-size: 11px;">Haryana’s CM Announces Free Education to Underprivileged Students
+                </p>
+            </div>
+
+            <div>
+                <img src="./images/n3.jpg" class="Slides" id="slide3" />
+                <p id="para3" style="font-size: 11px;">UP Post-Matric Scholarships Deadline Extended, Apply Now</p>
+            </div>
+
+            <div>
+                <img src="./images/n5.jpg" class="Slides" id="slide4" />
+                <p id="para4" style="font-size: 11px;">Class 12 Toppers To Receive Scholarships For Next 5 Years in
+                    Uttarakhand</p>
+            </div>
+        </div>
+
+        <button class="btn" id="swipeRight">&#10095;</button>
+    </div>
+
+    <h1 id="heading" class="bottom-heading">Student's Review</h1>
+    <div class="reviewSection">
+        <div class="review">
+            <h3>Adarsh Yadav</h3>
+            <h4>National school of Delhi, New Delhi</h4>
+            <p>
+                I really like the content. due to detailed video lectures it's easy
+                to understand the topic.
+            </p>
+        </div>
+        <div class="review">
+            <h3>Vishal Kandu</h3>
+            <h4>M.T.S Khalsa High school, Mumbai</h4>
+            <p>
+                Nice content for science stream especially quantum physics. I
+                learned entire physics from these website
+            </p>
+        </div>
+        <div class="review">
+            <h3>Vinod Kuril</h3>
+            <h4>Vibgyor roots and rise, Malad(west)</h4>
+            <p>One of the best resource for 12 board students. just awesome</p>
+        </div>
+    </div>
+
+    <!-- Contact  -->
+
+    <section id="contact" style="background-color: rgb(47, 47, 47)">
+  
+        <h1 class="section-header">Contact</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input style="background-color: black; color: white; font-weight: bold; border: 1px solid white;" type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input style="background-color: black; color: white; font-weight: bold; border: 1px solid white;" type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea style="background-color: black; color: white; font-weight: bold; border: 1px solid white;" class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+        
+        
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
