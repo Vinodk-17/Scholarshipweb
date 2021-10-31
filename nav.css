@@ -47,6 +47,11 @@ html {
   nav ul li a:hover {
     border-bottom: 3px solid #333;
   }
+
+  a:hover{
+    cursor: pointer;
+  }
+
   #current {
     color: #ff4629;
     border-bottom: 3px solid #333;
